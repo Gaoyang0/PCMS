@@ -3,8 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <title>首页</title>
+    <link rel="icon" href="/static/images/huaji.png" type="image/x-icon">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
 </head>
 <body>
-    adsasd
+<header>
+    <nav class="site-header sticky-top py-1">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header col-6">
+                    <a class="navbar-brand" href="/colorfight/index/">
+                        <img src="/static/images/colorfight_logo.png" height="35">
+                        <img src="/static/images/colorfight_text.png" class="hidden-sm" height="30">
+                    </a>
+                </div>
+                <div class="navbar-header col-6">
+                    <a class="navbar-brand" href="/snake/index/">
+                        <img src="/static/images/snake_logo.png" height="35">
+                        <img src="/static/images/snake_text.png" class="hidden-sm" height="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <hr>
+    <a href="/colorfight/index/" style="margin-left: 40%;">
+                <button class="btn btn-primary">进入COLORFIGHT</button>
+            </a>
+            <br><br>
+            <img src="/static/propaganda/colorfight.gif" style="width: 100%;">
+    <hr><br>
+    <a href="/snake/index/" style="margin-left: 40%;">
+                <button class="btn btn-primary">进入SNAKE</button>
+            </a>
+            <br><br>
+            <img src="/static/propaganda/snake.gif" style="width: 100%;">
+</div>
+<br>
+{#<div style="width: 70%; margin-left: 15%;">#}
+{#    <hr>#}
+{#    <div class="row">#}
+{#        <div class="col-6" style="border-right: 1px solid #FFA000">#}
+{#            <a href="/colorfight/index/">#}
+{#                <button class="btn btn-primary">进入COLORFIGHT</button>#}
+{#            </a>#}
+{#            <br><br>#}
+{#            <img src="/static/propaganda/colorfight.gif" style="width: 100%;">#}
+{#        </div>#}
+{#        <div class="col-6">#}
+{#            <a href="/snake/index/">#}
+{#                <button class="btn btn-primary">进入SNAKE</button>#}
+{#            </a>#}
+{#            <br><br>#}
+{#            <img src="/static/propaganda/snake.gif" style="width: 70%;">#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+{% include "public/footer.html" %}
 </body>
 </html>

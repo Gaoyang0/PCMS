@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下载</title>
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="/static/images/snake_logo.png" type="image/x-icon">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
+</head>
+<body>
+    {% include "snake/header.html" %}
+<div class="container">
+    <div class="entry-content" itemprop="text">
+        <br>
+        <h2>ExampleAI特点</h2>
+        <br>
+        <ul>
+            <li>作者致力于简化用户操作。</li>
+            <li>作者致力于让用户更容易理解流程。</li>
+            <li>用户不用关心任何关于通信的操作。</li>
+            <li>用户可直接运行ExampleAI,然后在此基础上修改。</li>
+            <li>让用户尽早的全身心的投入游戏AI逻辑的编写。</li>
+        </ul>
+        <hr>
+        <h2>采用技术</h2>
+        <br>
+        <ul>
+            <li>Django
+                <ul>
+                    <li>Django was invented to meet fast-moving newsroom deadlines, while satisfying the tough
+                        requirements of experienced Web developers.
+                    </li>
+                </ul>
+            </li>
+            <li>Channels
+                <ul>
+                    <li>Channels is a project that takes Django and extends its abilities beyond HTTP - to handle
+                        WebSockets, chat protocols, IoT protocols, and more. It’s built on a Python specification called
+                        ASGI.
+                    </li>
+                </ul>
+            </li>
+            <li>WebSocket
+                <ul>
+                    <li>WebSocket is a computer communications protocol, providing full-duplex communication channels
+                        over a single TCP connection. The WebSocket protocol was standardized by the IETF as RFC 6455 in
+                        2011, and the WebSocket API in Web IDL is being standardized by the W3C.
+                    </li>
+                </ul>
+            </li>
+            <li>Flask
+                <ul>
+                    <li>Flask is a micro web framework written in Python. It is classified as a microframework because
+                        it does not require particular tools or libraries.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <hr>
+    </div>
+    <br>
+    <div style="width: 20%; margin-left: 40%;">
+        <form action="/snake/download/" method="post">
+            <button id="submit" class="btn btn-primary">下载ExampleAI</button>
+        </form>
+    </div>
+    <br>
+</div>
+    {% include "public/footer.html" %}
+</body>
+</html>

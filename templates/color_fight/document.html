@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文档</title>
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="/static/images/colorfight_logo.png" type="image/x-icon">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
+    <style>
+        p {
+            font-size: 20px;
+            margin: 3px auto
+        }
+    </style>
+</head>
+<body>
+{% include "color_fight/header.html" %}
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-3">
+            <a style="color: #FFA000"><h3>●API Document</h3></a>
+        </div>
+        <div class="col-9" style="border-left: 1px solid #FFA000;">
+            <h1 style="color: #FFA000">API DOCUMENT</h1>
+            <br>
+            <div>
+                <h2>Introduction</h2>
+                <hr>
+                <p>Colorfight is a round based game.
+                    For each round, the players can send an action during a period of time,
+                    then the server will update based on the actions.</p>
+                <p>Each player has one kinds of resources:</p>
+                <ul>
+                    <li><p>Gold</p></li>
+                </ul>
+                <p>Players use gold to attack and occupy other cells to collect more gold source and score.</p>
+                <p>Players use gold to build different buildings on their own cells to help the game process.</p>
+                <p>At the end of the game, the player with the highest amount of score wins.</p>
+                <br>
+                <h2>Game Feature</h2>
+                <hr>
+                <h3>MapCell</h3>
+                <p>A MapCell represents a cell that a user can occupy.</p>
+                <p>The type of MapCell is "Gold" can produce gold for each round.</p>
+                <p>The game starts with a random number of gold mines.</p>
+                <br>
+                <h3>Building</h3>
+                <p>Players can build new "base" on the MapCell that they has been occupied.</p>
+                <br>
+                <h3>User</h3>
+                <p>Each player enters the game with a username and a game_id.</p>
+                <p>If a player register with the same username and game_id, it will be treated as the same user.</p>
+                <p>A player starts with 30 gold and 0 score.</p>
+                <br>
+                <h3>Force Field</h3>
+                <p>A MapCell will have a force_field after it's occupied by a player. </p>
+                <p>A player can select the occupied MapCell and attack the surrounding MapCell .</p>
+                <br>
+                <h2>Game Flow</h2>
+                <hr>
+                <h3>Preparation</h3>
+                <p>In the beginning of each round, a map will be generated. </p>
+                <p>Each cell of the map will have lots of attributes.</p>
+                <br>
+                <h3>Register</h3>
+                <p>A player is allowed to join at the appointed time.</p>
+                <p>The player will be assigned to a cell, this cell will be the home of the player.</p>
+                <br>
+                <h3>Command</h3>
+                <p>For each round, a player could give a list of valid commands. The possible commands are:</p>
+                <ul>
+                    <li><p>attack</p></li>
+                    <li><p>build</p></li>
+                </ul>
+                <br>
+                <h3>Attack</h3>
+                <p>It will try to attack the cell you specified.</p>
+                <p>Attack(x, y, cost)
+                    <ul>
+                        <li><p>x: The abscissa of a map.</p></li>
+                        <li><p>y: The ordinate of a map.</p></li>
+                        <li><p>cost: The cost of the offense.</p></li>
+                    </ul>
+                </p>
+                <br>
+                <h3>Build</h3>
+                <p>It will try to build a base on the cell you specified.</p>
+                <p>Build(x, y)
+                    <ul>
+                        <li><p>x: The abscissa of a map.</p></li>
+                        <li><p>y: The ordinate of a map.</p></li>
+                    </ul>
+                </p>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+{% include "public/footer.html" %}
+</body>
+</html>

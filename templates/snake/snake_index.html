@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>贪吃蛇</title>
+        <link rel="icon" href="/static/images/snake_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
+    <style>
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    {% include "snake/header.html" %}
+    <div class="container">
+    <hr>
+    <h1 style="text-align:center;">神仙写码活动重磅来袭啦!!!</h1>
+    <br>
+    <h3>引子</h3><br>
+    <p>还认为写代码很好玩吗?</p>
+    <p>还认为程序猿很酷吗?</p>
+    <p>数据结构, 算法设计,计算机网络有没有头大?</p>
+
+    <div><br>
+        <img src="/static/emoticon/838.gif" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1433.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1595.jpg" style="width: 200px; height: 200px;">
+    </div>
+    <br>
+    <p>咱们来点高端大气上档次, 烧脑惊险又刺激编程的活动!</p>
+    <h3>Snake</h3>
+    <div><br>
+        <img src="/static/images/snake_logo.png" style="width: 600px; height: 600px;">
+    </div>
+    <br>
+    <h3>是什么?</h3><br>
+    <p>是一款在线用AI来玩贪吃蛇游戏。</p>
+    <p>玩家从服务器获取贪吃蛇的棋盘信息，然后玩家通过算法分析后作出决策，操纵游戏。</p>
+    <p>这个项目有几个最根本的要求:</p>
+    <ul>
+        <li>第一是要好玩 ，看着就想试试。</li>
+        <li>第二是要门槛非常低，只要会写点程序就能玩，而且［Hello World］容易实现。</li>
+        <li>第三就是有深入空间，想随便玩玩可以随便写写，但是想认真研究，上限要足够高。</li>
+    </ul>
+    <div><br>
+        <img src="/static/emoticon/571.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1241.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1068.jpg" style="width: 200px; height: 200px;">
+    </div>
+    <br>
+    <h3>游戏规则</h3><br>
+    <p>规则概述：</p>
+    <ul>
+        <li>通过上下左右控制蛇的方向，寻找吃的东西。</li>
+        <li> 每吃一口就能得到一定的积分，而且蛇的身子会越吃越长。</li>
+        <li> 身子越长玩的难度就越大，不能碰墙，不能咬到自己的身体，更不能咬自己的尾巴。</li>
+    </ul>
+    <p><a href="/snake/instructions/">详细规则</a></p>
+    <div><br>
+        <img src="/static/emoticon/1311.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1464.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1530.jpg" style="width: 200px; height: 200px;">
+    </div>
+    <br>
+    <h3>游戏宗旨</h3><br>
+    <p>重在交流，快乐参与。</p>
+    <p>神仙在线打架！</p>
+    <p>我编程，我快乐！在线交友，性感写码！</p>
+    <p>你还在等什么？</p>
+    <p>无论你是初入编程世界的初学者。</p>
+    <p>想提高自己不断进步。</p>
+    <p>还是已经对编程驾轻就熟的大佬。</p>
+    <p>想与更多人交流自己的编程想法。</p>
+    <p>顺便再拿个第一名。</p>
+    <p>大型集体头秃现场, 欢迎您的报名！</p>
+    <div><br>
+        <img src="/static/emoticon/1548.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1438.png" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1111.jpg" style="width: 200px; height: 200px;">
+    </div>
+    <br>
+</div>
+    {% include "public/footer.html" %}
+</body>
+</html>

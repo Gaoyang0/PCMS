@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'channels',
     'web',
     'snake',
+    'colorfight',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文档</title>
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="/static/images/snake_logo.png" type="image/x-icon">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
+    <style>
+        p {
+            font-size: 20px;
+            margin: 3px auto
+        }
+    </style>
+</head>
+<body>
+{% include "snake/header.html" %}
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col-3">
+            <a style="color: #FFA000"><h3>●API Document</h3></a>
+        </div>
+        <div class="col-9" style="border-left: 1px solid #FFA000;">
+            <h1 style="color: #FFA000">API DOCUMENT</h1>
+            <br>
+            <div>
+                <h2>Introduction</h2>
+                <hr>
+                <p>Snake is the common name for a video game concept where the player maneuvers a line which grows in length, with the line itself being a primary obstacle. </p>
+                <p>The player controls a dot, square, or object on a bordered plane. As it moves forward, it leaves a trail behind, resembling a moving snake. In some games, the end of the trail is in a fixed position, so the snake continually gets longer as it moves. In another common scheme, the snake has a specific length, so there is a moving tail a fixed number of units away from the head. The player loses when the snake runs into the screen border, a trail or other obstacle, or itself.</p>
+                <br>
+                <h2>Game API</h2>
+                <hr>
+                <h3>snake_ai_server.py</h3>
+                <p>Provides an API for snake decisions.</p>
+                <p>Information obtained: </p>
+                <ul>
+                    <li><p>width: Maps of the wide.</p></li>
+                    <li><p>height: Maps of the high.</p></li>
+                    <li><p>food: Food location.</p></li>
+                    <li><p>body: Information snake-body.</p></li>
+                    <li><p>current_direction: The current direction.</p></li>
+                </ul>
+                <br>
+                <h3>SnakeDecision</h3>
+                <p>Concrete decision class.</p>
+                <p>Have the following necessary methods:</p>
+                <ul>
+                    <li><p>__init__(): Initialize map size</p></li>
+                    <li><p>set_map(): Update map message.</p></li>
+                    <li><p>get_one_step(): Calculate the next step.</p></li>
+                </ul>
+                <br>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% include "public/footer.html" %}
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>规则介绍</title>
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="/static/images/colorfight_logo.png" type="image/x-icon">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
+</head>
+<body>
+{% include "color_fight/header.html" %}
+<div class="container">
+    <hr>
+    <div class="entry-content" itemprop="text">
+        <br>
+        <h2>概述</h2>
+    <ul>
+        <li>每局游戏持续20分钟，根据最后得分决出胜负。</li>
+        <li>排名时分为两组，被击败的选手排在其他选手之后，然后组内按分数排名：
+            <ul>
+                <li>每占领一格领地得1分。</li>
+                <li>每占领一个金矿得10分。</li>
+                <li>每新建己方一个基地得15分。</li>
+                <li>每占领敌方一个基地得20分。</li>
+            </ul>
+        </li>
+    </ul>
+        <hr>
+        <br>
+    <h2>基地规则</h2>
+    <h2><img class="alignnone size-full wp-image-3770" src="/static/images/base.png" alt="" width="57" height="53"></h2>
+    <ul>
+        <li>在游戏开始时，每位玩家会在随机位置获得一块领地，并且上面建有基地。</li>
+        <li>玩家可以花费60金币在自己的领地上新建基地（BuildBase指令）。每人最多同时拥有3个基地。建造基地耗时30秒。</li>
+        <li>若玩家没有基地，则玩家被击败，所有领地变回空领地。玩家得分为被击败之前的分数。</li>
+    </ul>
+        <hr>
+        <br>
+    <h2>攻击防守规则</h2>
+    <p><img class="alignnone size-full wp-image-3773" src="/static/images/attack.png" alt="" width="47" height="50">
+        <img class="alignnone size-full wp-image-3773" src="/static/images/shield.png" alt="" width="47" height="50">
+    </p>
+    <ul>
+        <li>只能攻击和自己领地相邻的领地（不含对角）。</li>
+        <li>玩家不能同时攻击多块领地。</li>
+        <li>正在被攻击的领地不能同时被其他人攻击。</li>
+        <li>攻击一块空领地需要时间为 2 秒。</li>
+        <li>攻击一块其他人的领地需要的时间如下（单位：秒）：</li>
+    </ul>
+    <p style="padding-left: 30px;"><img class="alignnone size-full wp-image-3872"
+                                        src="/static/images/formula1.png"
+                                        width="490" height="60"
+                                        ></p>
+    <p style="padding-left: 30px;">其中x是该格子上次被占领到现在的时间（单位：秒）；k1 ((0~7)/8)为包围加速系数，使得 对方被包围时攻击时间变少；k2为金币加速系数，使得己方花费金币多时攻击时间变少；</p>
+    <ul>
+        <li>当被攻击的领地没有一个相邻的己方领地时（含对角），包围加速系数(k1)为0（没有加速）。每多一块相邻的己方领地参与包围，加速系数增加0.125。</li>
+        <li>金币加速系数(k2)公式为：</li>
+    </ul>
+    <p style="padding-left: 30px;"><img class="alignnone size-full wp-image-3766"
+                                        src="/static/images/formula2.png" alt=""
+                                        width="180" height="60"></p>
+    <p style="padding-left: 30px;">其中cost为占据此领地所花费的金币, maxcost为所能花费的最大的金币。</p>
+    <ul>
+        <li>攻击自己的领地相当于防御这块领地。防御也需要花费攻击时间，完成防御后，占领时间(x)会重新计时，使得之后的攻击所需时间变长。</li>
+    </ul>
+        <hr>
+        <br>
+    <h2>金币规则</h2>
+    <p><img class="alignnone size-full wp-image-3775" src="/static/images/gold_mine.png"
+            alt="" width="51" height="51"></p>
+    <ul>
+        <li>玩家进入游戏时自带30金币。</li>
+        <li>金矿的攻击规则与普通领地相同。</li>
+        <li>基地每秒会为占领者生产0.25个金币。金币生产后会直接提供给占领者，基地不储存金币。</li>
+        <li>金矿每秒会为占领者生产0.5个金币。金币生产后会直接提供给占领者，金矿不储存金币。</li>
+        <li>玩家最多可以同时储存200个金币。</li>
+    </ul>
+        <hr>
+        <br>
+    <h2>其他规则</h2>
+    <ul>
+        <li>选手可以在规则发布后就开始编写程序，并与他人分享程序、讨论交流。</li>
+        <li>比赛过程中，不得故意干扰服务器或者其他选手，否则将被禁赛。</li>
+        <li>选手如果在比赛过程中掉线，且不是服务器故障、区域性网络故障或受到恶意干扰，那么不会重赛。</li>
+    </ul>
+</div>
+</div>
+{% include "public/footer.html" %}
+</body>
+</html>

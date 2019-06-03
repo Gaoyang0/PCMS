@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建测试</title>
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="/static/images/colorfight_logo.png" type="image/x-icon">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
+</head>
+<body>
+{% include "color_fight/header.html" %}
+<div class="container">
+    <div style="margin:2px" class="col-12 d-none d-md-block align-middle">
+        <hr>
+        <div class="form-group">
+            <label>Game Time</label>
+            <input class="form-control" id="game_time" value=2000>
+            <small class="form-text text-muted">创建的游戏时长.</small>
+        </div>
+        <div class="form-group">
+            <label>Start Delay Time</label>
+            <input class="form-control" id="start_delay_time" value=20>
+            <small class="form-text text-muted">游戏延时时间,用于等待AI加入.</small>
+        </div>
+        <button id ="submit" class="btn btn-primary">创建</button>
+        <hr>
+        <div id = "create_res" style="visibility: hidden;" >
+            <div class="form-group">
+                <label id="create_state"></label>
+            </div>
+            <div class="form-group">
+                <label id="game_id"></label>
+            </div>
+            <div class="form-group">
+                <label id="game_room_url"></label>
+            </div>
+        </div>
+    </div>
+</div>
+{% include "public/footer.html" %}
+<script>
+    function ShowCreateResult(data) {
+        document.getElementById("create_state").innerHTML = "创建结果:" + data['state'];
+        document.getElementById("game_id").innerHTML = "游戏ID:" + data['game_id'];
+        document.getElementById("game_room_url").innerHTML = "房间URL:" + "<a href=" + data['game_room_url']+">"+data['game_room_url']+"</a>";
+        document.getElementById("create_res").style.visibility="visible";//显示
+    }
+    $("#submit").click(function () {
+        var create_info = {
+            'game_time': $("#game_time").val(),
+            'start_delay_time': $("#start_delay_time").val(),
+        }
+        $.ajax({
+            url: "http://127.0.0.1:8000/" + "colorfight/createtest/",
+            method: "POST",
+            dataType: "json",
+            contentType: 'application/json;charset=UTF-8',
+            data: JSON.stringify(create_info),
+            success: function (data) {
+                ShowCreateResult(data);
+            },
+        });
+    });
+</script>
+</body>
+</html>

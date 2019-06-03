@@ -1,0 +1,31 @@
+.container {
+    max-width: 960px;
+}
+
+/*
+ * Custom translucent site header
+ */
+.site-header {
+    background-color: #FFA000;
+    height: 60px;
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.site-header a {
+    color: #fff;
+    transition: ease-in-out color .15s;
+}
+
+.site-header a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+/*
+ * other
+*/
+hr {
+    background-color: #FFA000;
+}
+

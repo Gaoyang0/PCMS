@@ -7,5 +7,6 @@ from web import views
 
 urlpatterns = [
     # 首页
-    re_path('index/$', views.index),
+    re_path('web/index/', views.index),
+    re_path('web/test/', views.test),
 ]

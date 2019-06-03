@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="/static/images/contact.png" type="image/x-icon">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
+</head>
+<body>
+    {% include "snake/header.html" %}
+    <div class="container">
+        <hr>
+        <div class="entry-content" itemprop="text">
+            <br>
+            <h2>作者</h2>
+            <ul>
+                <li>作者来自湖北汽车工业学院软件152的高仰。</li>
+                <li>由于作者发现计算机专业课程上的实验代码比较抽象与乏味，许多学生缺乏编程兴趣，因此开发此网站激发学生的编程兴趣。</li>
+                <li>网站平台向学生提供相关游戏操作的API（全部是通过HTTP和服务器通讯的）。</li>
+                <li>提供AI代码测试以及比赛的服务，展示比赛信息，游戏规则，比赛结果和比赛视屏，游戏操作代码实例。</li>
+                <li>作者联系方式：
+                    <ul>
+                        <li>Email : 1298635601@qq.com</li>
+                        <li>Tel   : 18772805296</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr>
+            <br>
+            <h2>意见</h2>
+            <ul>
+                <li>有任何关于ColorFight的建议。</li>
+                <li>有任何关于SnakeAI的建议。</li>
+                <li>有任何关于服务器的建议。</li>
+                <li>敬请投稿的邮箱：1298635601@qq.com</li>
+            </ul>
+            <hr>
+            <br>
+            <h2>报名</h2>
+            <ul>
+                <li>对我们的比赛感兴趣。</li>
+                <li>想要提升自己的编程能力。</li>
+                <li>想要加入我们。</li>
+                <li>敬请发送邮件到：1298635601@qq.com</li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    {% include "public/footer.html" %}
+</body>
+</html>

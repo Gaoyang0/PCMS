@@ -18,6 +18,7 @@ from django.urls import path, include
 
 urlpatterns = [
     path('', include("web.urls")),
-    path('snake/', include("snake.urls")),
+    path('', include("snake.urls")),
+    path('', include('colorfight.urls')),
     path('admin/', admin.site.urls),
 ]

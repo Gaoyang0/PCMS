@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <TITLE>贪吃蛇</TITLE>
+    <META CHARSET="utf-8"/>
+    <link rel="icon" href="/static/images/snake_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
+</head>
+<body>
+{% include "snake/header.html" %}
+<div class="container">
+    <hr>
+    <div class="entry-content" itemprop="text">
+        <br>
+        <h2>概述</h2>
+        <ul>
+            <li>玩家分析游戏信息，然后决策，最后操作游戏。</li>
+            <li>如何操作：</li>
+            <ul>
+                <li>玩家下载ExampleAI自己优化后开启flask服务。</li>
+                <li>然后在AI请求地址中输入自己的服务器地址。</li>
+                <li>进行延时检测。</li>
+                <li>点击AI-start按钮。</li>
+            </ul>
+        </ul>
+        <hr>
+        <br>
+        <h2>游戏规则</h2>
+        <ul>
+            <li>通过上下左右控制蛇的方向，寻找吃的东西。</li>
+            <li> 每吃一口就能得到一定的积分，而且蛇的身子会越吃越长。</li>
+            <li> 身子越长玩的难度就越大，不能碰墙，不能咬到自己的身体，更不能咬自己的尾巴。</li>
+        </ul>
+        <hr>
+        <br>
+        <h2>其他规则</h2>
+        <ul>
+            <li>选手可以在规则发布后就开始编写程序，并与他人分享程序、讨论交流。</li>
+            <li>比赛过程中，不得故意干扰服务器或者其他选手，否则将被禁赛。</li>
+            <li>选手如果在比赛过程中掉线，且不是服务器故障、区域性网络故障或受到恶意干扰，那么不会重赛。</li>
+        </ul>
+    </div>
+    <br>
+</div>
+{% include "public/footer.html" %}
+</body>
+</html>

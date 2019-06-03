@@ -1,4 +1,4 @@
-var unit = 30;
+var unit = 60;
 var speed = '100';
 var xGridSize = 10;
 var yGridSize = 10;
@@ -7,7 +7,7 @@ var table = $('<table>');
 table.className = 'snake';
 table.setAttribute('cellspacing', 0);
 table.setAttribute('border-collapse', 'collapse');
-table.style.border = "2px solid #404293";
+table.style.border = "2px solid #FFA000";
 for (var i = 0; i < yGridSize; i++) {
     var tr = $('<tr>');
     for (var j = 0; j < xGridSize; j++) {
@@ -20,7 +20,14 @@ for (var i = 0; i < yGridSize; i++) {
     }
     table.appendChild(tr);
 }
-$('body')[0].appendChild(table);
+// $('body')[0].appendChild(table);
+$('#snake_space')[0].appendChild(table);
+
+function updateScore(len) {
+    document.querySelector('#game_score').innerText = "游戏得分："+ len;
+}
+
+
 
 //蛇身上的一个节点类
 function Node(left, top) {
@@ -127,6 +134,7 @@ function Snake() {
         var td = getTd(indexOf(this.food));
         td.style.backgroundImage = '';
         this.body.unshift(this.food);//向数组的开头添加一个元素
+        updateScore(this.body.length);
     };
 
     //显示蛇的形状
@@ -164,7 +172,7 @@ function Snake() {
         var node = this.food;
         var index = indexOf(node);
         var td = $('.snake td')[index];
-        td.style.background = "#eee url('/static/images/food.png') 2px 0 no-repeat";
+        td.style.background = "#eee url('/static/images/food.png') no-repeat center center";
     }
 
     //获取一个食物节点
@@ -222,4 +230,41 @@ document.onkeyup = function (e) {
             snake.move();
         }, speed);
     }
+}
+function $(p){
+	if(/^<([a-zA-Z]+)>$/.test(p)){
+		return document.createElement(RegExp.$1);
+	}else{
+		return document.querySelectorAll(p);
+	}
+}
+
+function trim(str){
+	return str.replace(/(^\s*)|(\s*$)/g, "");
+}
+
+
+function getTop(e){
+   var offset=e.offsetTop;
+   if(e.offsetParent!=null) {
+	   offset+=getTop(e.offsetParent);
+   }
+   return offset;
+}
+
+
+function getLeft(e){
+   var offset=e.offsetLeft;
+   if(e.offsetParent!=null){
+	   offset+=getLeft(e.offsetParent);
+   }
+   return offset;
+}
+
+function remove(q){
+	var eles = $(q);
+	for(var i=0;i<eles.length;i++){
+		var ele = eles[i];
+		ele.parentNode.removeChild(ele);
+	}
 }

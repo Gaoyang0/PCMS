@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <link rel="icon" href="/static/images/colorfight_logo.png" type="image/x-icon">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+            integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="/static/css/mystyle.css" rel="stylesheet">
+
+    <style>
+        p {
+            font-size: 18px;
+        }
+    </style>
+
+</head>
+<body>
+{% include "color_fight/header.html" %}
+<div class="container">
+    <hr>
+    <h1 style="text-align:center;">神仙写码活动重磅来袭啦!!!</h1>
+    <br>
+    <h3>引子</h3><br>
+    <p>还认为写代码很好玩吗?</p>
+    <p>还认为程序猿很酷吗?</p>
+    <p>数据结构, 算法设计,计算机网络有没有头大?</p>
+
+    <div><br>
+        <img src="/static/emoticon/838.gif" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1433.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1595.jpg" style="width: 200px; height: 200px;">
+    </div>
+    <br>
+    <p>咱们来点高端大气上档次, 烧脑惊险又刺激编程的活动!</p>
+    <h3>ColorFight</h3>
+    <div><br>
+        <img src="/static/emoticon/111.png" style="width: 600px; height: 600px;">
+    </div>
+    <br>
+    <h3>是什么?</h3><br>
+    <p>是一款在线对战游戏, 在游戏中，每个参与者将编写自己的AI程序来控制玩家，并争夺领地。</p>
+    <p>这个项目有几个最根本的要求:</p>
+    <ul>
+        <li>第一是要好玩 ，看着就想试试。</li>
+        <li>第二是要门槛非常低，只要会写点程序就能玩，而且［Hello World］容易实现。</li>
+        <li>第三就是有深入空间，想随便玩玩可以随便写写，但是想认真研究，上限要足够高。</li>
+    </ul>
+    <div><br>
+        <img src="/static/emoticon/571.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1241.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1068.jpg" style="width: 200px; height: 200px;">
+    </div>
+    <br>
+    <h3>游戏规则</h3><br>
+    <p>规则概述：</p>
+    <ul>
+        <li>游戏开始时每人会有一个基地，之后可以不断向四周扩张领地或入侵别的地盘。</li>
+        <li>玩家可以自己建新的基地，若所有基地被攻下则游戏判定失败。</li>
+        <li>胜利目标是在保护基地的前提下占领最多的领地来得分。</li>
+    </ul>
+    <p><a href="/colorfight/instructions/">详细规则</a></p>
+    <div><br>
+        <img src="/static/emoticon/1311.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1464.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1530.jpg" style="width: 200px; height: 200px;">
+    </div>
+    <br>
+    <h3>游戏宗旨</h3><br>
+    <p>重在交流，快乐参与。</p>
+    <p>神仙在线打架！</p>
+    <p>我编程，我快乐！在线交友，性感写码！</p>
+    <p>你还在等什么？</p>
+    <p>无论你是初入编程世界的初学者。</p>
+    <p>想提高自己不断进步。</p>
+    <p>还是已经对编程驾轻就熟的大佬。</p>
+    <p>想与更多人交流自己的编程想法。</p>
+    <p>顺便再拿个第一名。</p>
+    <p>大型集体头秃现场, 欢迎您的报名！</p>
+    <div><br>
+        <img src="/static/emoticon/1548.jpg" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1438.png" style="width: 200px; height: 200px;">
+        <img src="/static/emoticon/1111.jpg" style="width: 200px; height: 200px;">
+    </div>
+    <br>
+</div>
+{% include "public/footer.html" %}
+</body>
+</html>
