@@ -2,105 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fccbfe6c-df5e-478d-923e-f60d25fed2db" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/consumers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/core/colorfight.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/core/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/core/game_map.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/core/position.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/core/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/colorfight/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/download/ColorFightExampleAI.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/download/SnakeExampleAI.rar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/color.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/mystyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1068.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/111.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1111.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1241.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1311.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1390.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1433.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1438.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1450.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1451.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1463.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1464.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1484.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1530.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1542.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1548.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/1595.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/222.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/571.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/573.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/602.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/838.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/emoticon/845.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/attack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/base.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/colorfight_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/colorfight_text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/contact.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/formula1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/formula2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/gold_mine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/huaji.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/shield.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/snake_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/snake_text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/colorfight_logic.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jcanvas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/propaganda/colorfight.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/propaganda/snake.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/color_fight/colorfight.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/color_fight/colorfight_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/color_fight/contactme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/color_fight/createtest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/color_fight/document.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/color_fight/download.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/color_fight/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/color_fight/instructions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/color_fight/matchmsg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/public/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/snake/contactme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/snake/document.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/snake/download.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/snake/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/snake/instructions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/snake/matchmsg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/snake/snake_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PCMS/routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/PCMS/routing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PCMS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/PCMS/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PCMS/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/PCMS/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PCMS/channel_routing.py" beforeDir="false" afterPath="$PROJECT_DIR$/PCMS/channel_routing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/colorfight/test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/snake/consumers.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake/consumers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake/routing.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/snake/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake_ai/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/PCMS/channel_routing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake_ai/flask-snake-ai-api.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake_ai/snakeAI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/snake_ai/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery-1.3.2.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/snake_logic.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/snake_logic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/snake/control.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/snake/snake.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/snake/snake.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -147,82 +53,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1296">
+              <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="consumers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snake/consumers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+            <state relative-caret-position="1108">
+              <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/PCMS/settings.py">
+      <file leaf-file-name="routing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PCMS/routing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3321" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PCMS/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="consumers.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/colorfight/consumers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3753">
-              <caret line="142" column="22" selection-start-line="140" selection-start-column="20" selection-end-line="142" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/colorfight/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1404">
-              <caret line="58" column="72" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="81" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/snake/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="40" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="colorfight_logic.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/colorfight_logic.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1242">
-              <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="colorfight.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/colorfight/core/colorfight.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2511">
-              <caret line="101" column="85" selection-start-line="101" selection-start-column="85" selection-end-line="101" selection-end-column="85" />
+            <state relative-caret-position="270">
+              <caret line="12" column="49" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="channel_routing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PCMS/channel_routing.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="39" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="game_map.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/colorfight/core/game_map.py">
+      <file leaf-file-name="snake.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/snake/snake.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="-1917">
+              <caret line="24" column="143" selection-start-line="24" selection-start-column="143" selection-end-line="24" selection-end-column="143" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#BODY#0;n#HTML#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="snake_logic.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/snake_logic.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="snake_index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/snake/snake_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1701">
+              <caret line="63" column="35" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="consumers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/colorfight/consumers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3402">
+              <caret line="129" column="21" selection-start-line="125" selection-start-column="20" selection-end-line="129" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -274,14 +175,11 @@
         <option value="$PROJECT_DIR$/test/test.py" />
         <option value="$PROJECT_DIR$/PCMS/urls.py" />
         <option value="$PROJECT_DIR$/web/urls.py" />
-        <option value="$PROJECT_DIR$/PCMS/channel_routing.py" />
         <option value="$PROJECT_DIR$/static/test.js" />
         <option value="$PROJECT_DIR$/colorfight/core/position.py" />
         <option value="$PROJECT_DIR$/colorfight/core/temp.py" />
         <option value="$PROJECT_DIR$/static/js/util.js" />
         <option value="$PROJECT_DIR$/static/css/s.css" />
-        <option value="$PROJECT_DIR$/static/js/snake_logic.js" />
-        <option value="$PROJECT_DIR$/snake/consumers.py" />
         <option value="$PROJECT_DIR$/templates/public/footer.html" />
         <option value="$PROJECT_DIR$/templates/color_fight/createtest.html" />
         <option value="$PROJECT_DIR$/static/color.js" />
@@ -312,10 +210,13 @@
         <option value="$PROJECT_DIR$/templates/color_fight/document.html" />
         <option value="$PROJECT_DIR$/templates/snake/document.html" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/templates/snake/snake.html" />
         <option value="$PROJECT_DIR$/templates/color_fight/colorfight_index.html" />
         <option value="$PROJECT_DIR$/colorfight/core/colorfight.py" />
         <option value="$PROJECT_DIR$/static/js/colorfight_logic.js" />
+        <option value="$PROJECT_DIR$/PCMS/channel_routing.py" />
+        <option value="$PROJECT_DIR$/templates/snake/snake.html" />
+        <option value="$PROJECT_DIR$/snake/consumers.py" />
+        <option value="$PROJECT_DIR$/static/js/snake_logic.js" />
       </list>
     </option>
   </component>
@@ -328,11 +229,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="89" />
-    <option name="y" value="291" />
-    <option name="width" value="1380" />
-    <option name="height" value="916" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="71" />
+    <option name="y" value="42" />
+    <option name="width" value="1204" />
+    <option name="height" value="730" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -342,7 +243,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -354,17 +254,6 @@
               <item name="PCMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="PCMS" type="462c0819:PsiDirectoryNode" />
               <item name="colorfight" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PCMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PCMS" type="462c0819:PsiDirectoryNode" />
-              <item name="colorfight" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PCMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PCMS" type="462c0819:PsiDirectoryNode" />
-              <item name="download" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PCMS" type="b2602c69:ProjectViewProjectNode" />
@@ -396,24 +285,20 @@
               <item name="PCMS" type="b2602c69:ProjectViewProjectNode" />
               <item name="PCMS" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="color_fight" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PCMS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PCMS" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="snake" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="colo&#9;ACTION&#9;ShowColorPicker&#10;color&#9;ACTION&#9;ShowColorPicker" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../websocketTest" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -565,25 +450,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="89" y="291" width="1380" height="916" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="5" weight="0.32824427" />
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" x="3" y="317" width="1914" height="405" id="Run" order="12" sideWeight="0.50104165" weight="0.11456628" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3293348" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.3293348" />
-      <window_info anchor="bottom" x="3" y="317" width="1914" height="405" id="Run" order="12" sideWeight="0.50104165" weight="0.276273" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49895832" weight="0.32415518" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23712121" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49895832" weight="0.3453355" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17246597" />
       <window_info anchor="right" id="R Packages" order="3" show_stripe_button="false" weight="0.32951483" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" weight="0.32978722" />
       <window_info anchor="right" id="R Graphics" order="4" show_stripe_button="false" weight="0.32951483" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="right" id="SciView" order="6" weight="0.32951483" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.39924905" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -639,20 +524,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/colorfight/core/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colorfight/core/position.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2106">
-          <caret line="78" column="35" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/script.js" />
     <entry file="file://$PROJECT_DIR$/static/js/util.js" />
     <entry file="file://$PROJECT_DIR$/static/images/food.png">
@@ -708,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/colorfight/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="44" column="34" selection-start-line="43" selection-start-column="4" selection-end-line="44" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -747,13 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/snake/snake_index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1701">
-          <caret line="63" column="35" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -848,31 +705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/color_fight/colorfight.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="10" column="63" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/snake_logic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/snake/snake.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -887,11 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2106">
           <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#2;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -901,16 +732,6 @@
           <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="40" selection-end-column="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colorfight/consumers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3753">
-          <caret line="142" column="22" selection-start-line="140" selection-start-column="20" selection-end-line="142" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PCMS/channel_routing.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/colorfight/core/game_map.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -940,20 +761,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/snake/consumers.py">
+    <entry file="file://$PROJECT_DIR$/PCMS/settings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PCMS/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+        <state relative-caret-position="351">
+          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PCMS/settings.py">
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3321" />
+        <state relative-caret-position="81">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PCMS/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/PCMS/routing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colorfight/test.py" />
+    <entry file="file://$PROJECT_DIR$/PCMS/channel_routing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/snake/snake_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1701">
+          <caret line="63" column="35" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/colorfight/consumers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3402">
+          <caret line="129" column="21" selection-start-line="125" selection-start-column="20" selection-end-line="129" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/snake_logic.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/snake/consumers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1108">
+          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/snake/snake.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1917">
+          <caret line="24" column="143" selection-start-line="24" selection-start-column="143" selection-end-line="24" selection-end-column="143" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#BODY#0;n#HTML#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

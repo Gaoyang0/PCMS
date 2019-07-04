@@ -24,8 +24,6 @@
         </div>
         <input type="text" class="form-control" id="target_address" value="http://127.0.0.1:5000/snake-ai/" style="border: 1px solid #FFA000;">
         &nbsp;
-        <button type="button" class="btn btn-outline-warning" id="delayed_test">延时检测</button>
-        &nbsp;
         <button type="button" class="btn btn-outline-success" id="ai-start">AI-start</button>
     </div>
 
@@ -74,17 +72,10 @@
     document.querySelector('#restartBtn').onclick = function (e) {
         location.reload();
     }
-    document.querySelector('#delayed_test').onclick = function (e) {
-        target_address = $('#target_address').val();
-        ws.send(JSON.stringify({
-            'type': 'delayed_test',
-            'message': {
-                'target_address': target_address,
-            }
-        }));
-    }
+
     document.querySelector('#ai-start').onclick = function (e) {
         target_address = $('#target_address').val();
+        alert(target_address);
         var d = new Date();
         send_time = d.getTime();
         ws.send(JSON.stringify({
@@ -106,6 +97,7 @@
 
     // test: 用于测试    www: 代表房间名
     var target = 'ws://' + window.location.host + '/ws/test/www/';
+    // var target = 'ws://' + "47.100.83.146:8001" + '/ws/test/www/';
     if ('WebSocket' in window) {
         ws = new WebSocket(target);
     } else if ('MozWebSocket' in window) {

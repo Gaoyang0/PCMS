@@ -30,35 +30,15 @@ class SnakeConsumer(WebsocketConsumer):
     def receive(self, text_data):
         text_data_json = json.loads(text_data)
         message_type = text_data_json['type']
-        if message_type == 'delayed_test':
-            target_address = text_data_json['message']['target_address']
-            time_start = time.time()
-            r = requests.post(target_address)
-            time_end = time.time()
-            print('延时检测: ', time_end - time_start)
-            async_to_sync(self.channel_layer.group_send)(
-                self.room_group_name,
-                {
-                    'type': 'send_message',
-                    'message': {
-                        'type': 'delayed_test_result',
-                        'message': {
-                            'delayed': time_end - time_start
-                        },
-                    }
-                }
-            )
-
-        elif message_type == 'map_data':
+        if message_type == 'map_data':
             body = text_data_json['message']['body']
             food = text_data_json['message']['food']
             direction = text_data_json['message']['direction']
             target_address = text_data_json['message']['target_address']
             map_size = text_data_json['message']['map_size']
 
-            headers = {'content-type': 'application/json'}
             message = {
-                'type': 'ai_decision',
+                'type': 'request_res',
                 'message': {
                     'body': body,
                     'food': food,
@@ -67,30 +47,45 @@ class SnakeConsumer(WebsocketConsumer):
                 },
             }
 
-            time_start = time.time()
-            r = requests.post(target_address, data=json.dumps(message), headers=headers)
-            time_end = time.time()
-            # print('决策: ', time_end - time_start)
-            res = r.json()
-            if res['type'] == 'ai_control':
-                async_to_sync(self.channel_layer.group_send)(
-                    self.room_group_name,
-                    {
-                        'type': 'send_message',
+            async_to_sync(self.channel_layer.group_send)(
+                self.room_group_name,
+                {
+                    'type': 'request_res',
+                    'message': {
+                        'type': 'request_res',
                         'message': {
-                            'type': 'control',
-                            'message': {
-                                'direction': res['message']['direction']
-                            },
-                        }
+                            'body': body,
+                            'food': food,
+                            'direction': direction,
+                            'map_size': map_size,
+                        },
                     }
-                )
+                }
+            )
+        elif message_type == 'res':
+            direction = text_data_json["message"]["direction"]
+            async_to_sync(self.channel_layer.group_send)(
+                self.room_group_name,
+                {
+                    'type': 'send_res',
+                    'message': {
+                        'type': 'control',
+                        'message': {
+                            'direction': direction
+                        },
+                    }
+                }
+            )
 
 
-    # Receive message from room group
-    def send_message(self, event):
+    def send_res(self, event):
         message = event['message']
+        # Send message to WebSocket
+        self.send(text_data=json.dumps(message))
 
+
+    def request_res(self, event):
+        message = event['message']
         # Send message to WebSocket
         self.send(text_data=json.dumps(message))
 
